@@ -1,0 +1,104 @@
+/* 🌌 Global futuristic background */
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background futuristic gradient */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  height: 100vh;
+  color: #fff;
+}
+
+/* Main container */
+.to-do-main {
+  width: 420px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+
+  box-shadow: 
+    0 0 20px rgba(0,255,255,0.3),
+    0 0 40px rgba(0,255,255,0.2);
+
+  transition: 0.4s;
+}
+
+.to-do-main:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+#header {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* Input section */
+.to-do-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.to-do-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  box-shadow: inset 0 0 10px rgba(0,255,255,0.3);
+}
+
+.to-do-input input::placeholder {
+  color: #aaa;
+}
+
+/* Add button */
+.to-do-input button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #00ffff, #00ff99);
+  color: black;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.to-do-input button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* Section titles */
+#tasks {
+  color: #00ffcc;
+  margin-top: 20px;
+  text-shadow: 0 0 8px #00ffcc;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 20px 0;
+}
