@@ -1,10 +1,15 @@
+
+* {
+  box-sizing: border-box;
+}
 .to-do-list {
-  margin-top: 10px;
-   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
-}
 
+  max-height: 60vh;     /* limit height */
+  overflow-y: auto;     /* scroll inside */
+}
 /* Remove default ul styles */
 ul {
   padding: 0;
@@ -21,9 +26,15 @@ ul {
   justify-content: space-between;
   align-items: center;
 
-  margin: 10px 0;
-  padding: 12px;
+  word-break: break-word;   /* long text break */
+  flex-wrap: wrap;     
   border-radius: 12px;
+   width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+
+  overflow: hidden;  
 
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
@@ -102,4 +113,27 @@ ul {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.to-do-input {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.to-do-input input {
+  flex: 1;
+  min-width: 0;   /* 🔥 important */
+}
+
+.to-do-input button {
+  flex-shrink: 0;
+}
+.to-do-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+  flex-wrap: wrap;          /* 🔥 prevents breaking */
+  word-break: break-word;   /* long text break */
 }
